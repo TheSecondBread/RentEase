@@ -1,6 +1,7 @@
 import React from "react";
 
 export default function MypropCard({ myprop }) {
+  console.log
   return (
     <div
       className="mpcard"
@@ -13,9 +14,10 @@ export default function MypropCard({ myprop }) {
       }}
     >
       <img
-        src="https://via.placeholder.com/200"
+        src={myprop.imageUrls[0]}
         alt="Image"
         className="card-image"
+        style={{height:"200px",width:"200px",marginTop:"2rem"}}
       />
       <div className="mpcard-content" style={{ marginLeft: "2rem" }}>
         <h2>Title:{myprop.title}</h2>

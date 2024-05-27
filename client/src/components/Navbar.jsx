@@ -11,13 +11,14 @@ export default function Navbar() {
         <a href="/about">About</a>
         <a href="/browse">Search</a>
         <a href="/list">List Property</a>
-        <div className="dropdown">
+        <a href="/myprop">My Properties</a>
+        {/* <div className="dropdown">
           <button className="dropbtn">Settings</button>
           <div className="dropdown-content">
             <a href="/profile">Profile</a>
             <a href="/myprop">My Properties</a>
           </div>
-        </div>
+        </div> */}
         {/* <a href="#signup">Settings</a> */}
       </nav>
     </div>
