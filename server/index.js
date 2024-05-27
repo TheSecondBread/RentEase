@@ -6,13 +6,14 @@ const propRoutes = require("./routes/propRoutes")
 const cors = require("cors")
 const jwt = require("jsonwebtoken")
 const app= express()
-const secret = "slkdjflaksdfjlsdkfl"
+require("dotenv").config()
+const secret = process.env.JWT_SECRET
 
 
 
 
 //DB
-connectMongo("mongodb+srv://TheSecondBread:159753456cs@cluster0.rplmba9.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+connectMongo(process.env.MONGOURI)
 .then(console.log("mongo connected"))
 
 //middlewares
