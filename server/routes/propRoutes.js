@@ -4,6 +4,7 @@ const PROP = require("../models/properties")
 
 propRoutes.post("/post",(req,res)=>{
     console.log("---")
+    console.log(req.user.user)
     const prop = PROP.create({
         title:req.body.title,
         description:req.body.description,
