@@ -18,7 +18,7 @@ propRoutes.post("/post",(req,res)=>{
         createdBy:req.user.user._id,
         owner:req.user.user.name,
         number:req.user.user.number,
-        imageUrls:req.user.user.imageUrls
+        imageUrls:req.body.imageUrls
     })
     res.json({"msg":"created",prop:prop})
 })
