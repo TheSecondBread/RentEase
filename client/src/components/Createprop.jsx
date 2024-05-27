@@ -50,7 +50,7 @@ export default function Createprop() {
   const handleAddProp = async (e) => {
     e.preventDefault();
     const imageUrls = await uploadImagesToImgur(imageFiles);
-    fetch("http://localhost:8000/prop/post", {
+    fetch("https://rentease-1gfx.onrender.com/prop/post", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

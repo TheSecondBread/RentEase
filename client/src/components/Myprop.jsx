@@ -12,7 +12,7 @@ export default function Myprop() {
   }, []); // Empty dependency array ensures this effect runs only once, equivalent to componentDidMount in class components
 
   const handleGetprop = () => {
-    fetch("http://localhost:8000/prop/myprop", {
+    fetch("https://rentease-1gfx.onrender.com/prop/myprop", {
       method: "GET",
       headers: {
         "Content-Type": "application/json",

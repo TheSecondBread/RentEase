@@ -11,7 +11,7 @@ export default function Allprops() {
   const handleSearch = (e, city, type, avail) => {
     e.preventDefault();
     console.log(city.current.value, type.current.value, avail.current.value);
-    fetch("http://localhost:8000/prop/props", {
+    fetch("https://rentease-1gfx.onrender.com/prop/props", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

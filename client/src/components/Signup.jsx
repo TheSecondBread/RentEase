@@ -9,7 +9,7 @@ const Signup = () => {
   const password = useRef(null);
 
   const handleSignup = () => {
-    fetch("http://localhost:8000/signup", {
+    fetch("https://rentease-1gfx.onrender.com/signup", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

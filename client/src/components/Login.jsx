@@ -9,7 +9,7 @@ export default function Login() {
     console.log("clicked");
     e.preventDefault();
 
-    fetch("http://localhost:8000/login", {
+    fetch("https://rentease-1gfx.onrender.com/login", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
