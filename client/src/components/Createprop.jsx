@@ -32,7 +32,7 @@ export default function Createprop() {
           headers: {
             Authorization: `Client-ID ${IMGUR_CLIENT_ID}`,
           },
-          body: formData,
+          body: formData[0],
         });
 
         const data = await response.json();
