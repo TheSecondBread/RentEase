@@ -1,23 +1,18 @@
 import React, { useEffect, useState } from "react";
 
-// const images = [
-//   { src: "2.jpg", description: "Image 2 description" },
-//   { src: "3.jpg", description: "Image 3 description" },
-//   // Add more images as needed
-// ];
-
 export default function Showpropcard({ allprop }) {
-  // console.log(allprop)
   const [currentIndex, setCurrentIndex] = useState(0);
-  const images = allprop.imageUrls
+  const images = allprop.imageUrls || []; // Ensure imageUrls is an array
 
   useEffect(() => {
+    if (images.length === 0) return;
+
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
     }, 3000);
 
     return () => clearInterval(interval);
-  }, []);
+  }, [images.length]);
 
   return (
     <div
@@ -56,11 +51,15 @@ export default function Showpropcard({ allprop }) {
             marginLeft: "3rem",
           }}
         >
-          <img
-            src={images[currentIndex].src}
-            alt={`Slide ${currentIndex + 1}`}
-            style={{ width: "100%", height: "auto", objectFit: "cover" }}
-          />
+          {images.length > 0 ? (
+            <img
+              src={images[currentIndex]}
+              alt={`Slide ${currentIndex + 1}`}
+              style={{ width: "100%", height: "auto", objectFit: "cover" }}
+            />
+          ) : (
+            <p>No images available</p>
+          )}
         </div>
       </div>
       <div className="mfcard-container">
