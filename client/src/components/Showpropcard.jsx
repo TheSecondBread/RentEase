@@ -1,14 +1,15 @@
 import React, { useEffect, useState } from "react";
 
-const images = [
-  { src: "2.jpg", description: "Image 2 description" },
-  { src: "3.jpg", description: "Image 3 description" },
-  // Add more images as needed
-];
+// const images = [
+//   { src: "2.jpg", description: "Image 2 description" },
+//   { src: "3.jpg", description: "Image 3 description" },
+//   // Add more images as needed
+// ];
 
 export default function Showpropcard({ allprop }) {
   // console.log(allprop)
   const [currentIndex, setCurrentIndex] = useState(0);
+  const images = allprop.imageUrls
 
   useEffect(() => {
     const interval = setInterval(() => {
