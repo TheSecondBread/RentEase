@@ -45,6 +45,9 @@ function auth(req,res,next){
 
 
 //non auth routes
+app.get("/health",(req,res)=>{
+    res.send("active")
+})
 app.use("/",userRouter)
 //auth routes
 //user
