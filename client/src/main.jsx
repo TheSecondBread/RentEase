@@ -13,9 +13,9 @@ import Myprop from './components/Myprop.jsx'
 import Allprops from './components/Allprops.jsx'
 
 const route =createBrowserRouter([
-  {path:"/home",element:<App></App>},
+  {path:"/index",element:<App></App>},
   {path:"/",element:<Intro></Intro>},
-  {path:"/index",element:<Home></Home>},
+  {path:"/home",element:<Home></Home>},
   {path:"/about",element:<About></About>},
   {path:"/profile",element:<Profile></Profile>},
   {path:"/list",element:<Createprop></Createprop>},

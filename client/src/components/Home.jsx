@@ -1,6 +1,6 @@
 import React from "react";
 import Navbar from "./Navbar";
-
+import { Analytics } from "@vercel/analytics/react"
 export default function Home() {
   return (
     <>
@@ -42,6 +42,7 @@ export default function Home() {
           </center>
         </div>
       </div>
+      <Analytics></Analytics>
     </>
   );
 }

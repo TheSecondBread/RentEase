@@ -36,7 +36,7 @@ export default function Login() {
 
 
           Cookies.set("jwt", data["token"]);
-          navigate("/index");
+          navigate("/home");
   
 
         }

@@ -7,7 +7,7 @@ export default function Navbar() {
         RentEase
       </h1>
       <nav className="nav">
-        <a href="/index">Home</a>
+        <a href="/home">Home</a>
         <a href="/about">About</a>
         <a href="/browse">Search</a>
         <a href="/list">List Property</a>

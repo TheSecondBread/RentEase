@@ -1,9 +1,6 @@
 import './App.css'
 import Cookies from 'js-cookie';
-import Createprop from './components/Createprop';
-import Myprop from './components/Myprop';
-import Allprops from './components/Allprops';
-import { Analytics } from "@vercel/analytics/react"
+
 
 function App() {
 
@@ -22,14 +19,6 @@ function App() {
   }   
   return (
     <div style={{color:"black"}}>
-   <h1>
-    hello 
-    <button onClick={()=>{home()}}>Click me</button>
-   </h1>
-   <Analytics></Analytics>
-   <Createprop/>
-   <Myprop/>
-   <Allprops/>
     </div>
   )
 }
