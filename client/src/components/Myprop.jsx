@@ -40,7 +40,7 @@ export default function Myprop() {
               return <MypropCard key={item._id} myprop={item} />;
             })
           ) : (
-            <h1>No properties</h1>
+            <h1 style={{marginTop:"20rem"}}>No Listed Properties</h1>
           )}
         </div>
       </center>
